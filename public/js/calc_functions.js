@@ -14,7 +14,7 @@ var valor1 = 0
 function atualizarOperacao(btn){
     const display = document.getElementById('display');
     operador = btn.value;
-    valor1 = parseInt(display.value);
+    valor1 = parseFloat(display.value);
     display.value = '0';
 }
 

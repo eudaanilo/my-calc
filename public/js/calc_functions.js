@@ -1,6 +1,6 @@
 function atualizarDisplay(btn){
     const display = document.getElementById('display');
-    if(display.value.length === 9) return;
+    if(display.value.length === 15) return;
     if(display.value === '0') display.value = btn.value;
     else display.value += btn.value;
 }
@@ -15,7 +15,7 @@ function atualizarOperacao(btn){
     const display = document.getElementById('display');
     operador = btn.value;
     valor1 = parseFloat(display.value);
-    display.value = '0';
+    display.value += operador;
 }
 
 function calcularOperacao(){
@@ -24,7 +24,19 @@ function calcularOperacao(){
     valor1 = eval(valor1+operador+valor2);
     display.value = valor1;
     operador = '';
-}       
+}
+
+function raiz(){
+    const display = document.getElementById('display');
+    valor1 = parseFloat(display.value);
+    display.value = Math.sqrt(valor1);
+}
+
+function exponenciacao(){
+    const display = document.getElementById('display');
+    valor1 = parseFloat(display.value);
+    display.value = valor1**2;
+}
 
 function manipularTeclado(){
     if(/[0-9]/.test(event.key))

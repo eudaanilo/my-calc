@@ -13,7 +13,7 @@ table{
     border-radius: 15px;
 }
 input{
-    border-width: 5px;
+    border-width: 3px;
     width: 100px;
     height: 100px;
     color: red;
@@ -22,5 +22,5 @@ input{
     margin: 15px;
 }
 #display{
-    width: 550px;
+    width: 365px;
 }

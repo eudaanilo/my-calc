@@ -20,11 +20,13 @@ function atualizarOperacao(btn){
 
 function calcularOperacao(){
     const display = document.getElementById('display');
-    const valor2 = parseInt(display.value);
-    valor1 = eval(valor1+operador+valor2);
+    //const valor2 = parseInt(display.value);
+    //console.log(valor1+operador+valor2);
+    valor1 = eval(display.value);
     display.value = valor1;
     operador = '';
 }
+
 
 function raiz(){
     const display = document.getElementById('display');
